@@ -20,7 +20,7 @@ HEPTA-SAT training sample: **Bosch BME280** environmental sensor (temperature, h
 |--------|-----------|
 | SDA | **GP6** |
 | SCL | **GP7** |
-| VCC | 3.3 V payload |
+| VCC | 3.3 V payload (`eps.switch_3V3_on()`) |
 | GND | GND |
 
 > The onboard BNO055 uses the default I2C bus (`Wire`). The BME280 uses **Wire1** on **GP6/GP7**.
@@ -29,7 +29,7 @@ HEPTA-SAT training sample: **Bosch BME280** environmental sensor (temperature, h
 
 1. Open `Lab7-sample_bme280.ino` in the Arduino IDE
 2. Board: **Raspberry Pi Pico** (HEPTA-SAT build settings)
-3. Ensure the `src/` submodule (HEPTA-SAT-Library) is checked out
+3. Check out the `src/` submodule (`git submodule update --init`)
 4. Compile and upload to HEPTA-SAT
 5. Open the USB serial monitor at **9600 baud**
 

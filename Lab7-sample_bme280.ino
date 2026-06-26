@@ -2,10 +2,13 @@
 #include "src/drv/bme280_bosch.h"
 
 HeptaCdh cdh;
+HeptaEps eps;
 Bme280 bme;
 
 void setup() {
   cdh.begin();
+  eps.init();
+  eps.switch_3V3_on();
 
   if (!bme.begin()) {
     cdh.println("BME280 init failed");
