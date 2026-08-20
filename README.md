@@ -28,7 +28,7 @@ HEPTA-SAT training sample: **Bosch BME280** environmental sensor (temperature, h
 ## Build and Upload
 
 1. Open `Lab7-sample_bme280.ino` in the Arduino IDE
-2. Board: **Raspberry Pi Pico** (HEPTA-SAT build settings)
+2. Board: **Generic RP2350** (HEPTA-SAT build settings)
 3. Check out the `src/` submodule (`git submodule update --init`)
 4. Compile and upload to HEPTA-SAT
 5. Open the USB serial monitor at **9600 baud**
