@@ -25,6 +25,9 @@ HEPTA-SAT training sample: **Bosch BME280** environmental sensor (temperature, h
 
 > The onboard BNO055 uses the default I2C bus (`Wire`). The BME280 uses **Wire1** on **GP6/GP7**.
 
+<img width="613" height="409" alt="image" src="https://github.com/user-attachments/assets/e48ca38e-37d6-4e8f-9981-fa38a8667328" />
+
+
 ## Build and Upload
 
 1. Open `Lab7-sample_bme280.ino` in the Arduino IDE

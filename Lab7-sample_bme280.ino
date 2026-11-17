@@ -9,12 +9,11 @@ void setup() {
   cdh.begin();
   eps.init();
   eps.switch_3V3_on();
+  delay(100);
 
-  if (!bme.begin()) {
+  while (!bme.begin()) {
     cdh.println("BME280 init failed");
-    while (true) {
-      delay(1000);
-    }
+    delay(1000);
   }
 
   cdh.println("BME280 ready (Wire1 GP6/GP7)");
