@@ -18,10 +18,14 @@ HEPTA-SAT training sample: **Bosch BME280** environmental sensor (temperature, h
 
 | BME280 | HEPTA-SAT |
 |--------|-----------|
-| SDA | **GP6** |
-| SCL | **GP7** |
-| VCC | 3.3 V payload (`eps.switch_3V3_on()`) |
+| SDI (SDA) | **SDA** (GP6) |
+| SCK (SCL) | **SCL** (GP7) |
+| VDD | 3.3 V payload (`eps.switch_3V3_on()`) |
 | GND | GND |
+| SDO | GND (selects address `0x76`) |
+| CSB | VDD via jumper J3 on the AE-BME280 |
+
+For the pictured AE-BME280, close J3 for I2C operation. With J3 closed, the CSB header pin needs no separate wire. [AE-BME280 module manual (PDF)](https://akizukidenshi.com/goodsaffix/AE-BME280_manu_v1.1.pdf)
 
 > The onboard BNO055 uses the default I2C bus (`Wire`). `bme.begin()` configures **Wire1** on **GP6/GP7** automatically.
 
