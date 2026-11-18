@@ -16,7 +16,7 @@ void setup() {
     delay(1000);
   }
 
-  cdh.println("BME280 ready (Wire1 GP6/GP7)");
+  cdh.println("BME280 ready");
 }
 
 void loop() {

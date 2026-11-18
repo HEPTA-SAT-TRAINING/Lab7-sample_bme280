@@ -23,7 +23,7 @@ HEPTA-SAT training sample: **Bosch BME280** environmental sensor (temperature, h
 | VCC | 3.3 V payload (`eps.switch_3V3_on()`) |
 | GND | GND |
 
-> The onboard BNO055 uses the default I2C bus (`Wire`). The BME280 uses **Wire1** on **GP6/GP7**.
+> The onboard BNO055 uses the default I2C bus (`Wire`). `bme.begin()` configures **Wire1** on **GP6/GP7** automatically.
 
 <img width="613" height="409" alt="image" src="https://github.com/user-attachments/assets/e48ca38e-37d6-4e8f-9981-fa38a8667328" />
 
@@ -39,7 +39,7 @@ HEPTA-SAT training sample: **Bosch BME280** environmental sensor (temperature, h
 ## Example Serial Output
 
 ```
-BME280 ready (Wire1 GP6/GP7)
+BME280 ready
 Temperature: 24.35 [deg C]
 Humidity: 45.20 [%]
 Pressure: 1013.25 [hPa]
